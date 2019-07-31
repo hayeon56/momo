@@ -27,14 +27,14 @@ class Momo{
   }
 
   //POST
-  public function post($url){
+  public function post($url,$data){
 
     $curl = curl_init();
     $search = "";
-    $data = array(
-      "top_category_path"=>["キーホルダー"]
-    );
-    $data = json_encode($data);
+    // $data = array(
+    //   "top_category_path"=>["キーホルダー"]
+    // );
+    // $data = json_encode($data);
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_POST, 1);
     curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
