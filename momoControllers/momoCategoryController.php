@@ -119,31 +119,31 @@ class Momo{
                $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\"]}";
                $category_data3 = $this->post($url,$data);
 
-              // for($z = 0; $z < sizeof($category_data3['child_categories']); $z++){
-              //    $category_3 = $category_data3['child_categories'][$z]['full_path'][2];
-              //     $category_arr[$num] = $category_1.">".$category_2.">".$category_3;
-              //      $num++;
-              //     if($category_data3['child_categories'][$j]['has_child_categories'] == 'Yes')
-              //     $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\"]}";
-              //     $category_data4 = $this->post($url,$data);
-              //
-              //      for($e = 0; $e < sizeof($category_data4['child_categories']); $e++){
-              //        $category_4 = $category_data4['child_categories'][$e]['full_path'][3];
-              //         $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4;
-              //           $num++;
-              //         if($category_data4['child_categories'][$e]['has_child_categories'] == 'Yes'){
-              //           $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
-              //           $category_data5 = $this->post($url,$data);
-              //
-              //           for($r = 0; $r < sizeof($category_data5['child_categories']); $r++){
-              //             $category_5 = $category_data5['child_categories'][$r]['full_path'][4];
-              //             $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
-              //             $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4.">".$category_5;
-              //               $num++;
-              //           }
-              //         }
-              //      }
-              //   }
+              for($z = 0; $z < sizeof($category_data3['child_categories']); $z++){
+                 $category_3 = $category_data3['child_categories'][$z]['full_path'][2];
+                  $category_arr[$num] = $category_1.">".$category_2.">".$category_3;
+                   $num++;
+                  if($category_data3['child_categories'][$j]['has_child_categories'] == 'Yes')
+                  $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\"]}";
+                  $category_data4 = $this->post($url,$data);
+
+                   // for($e = 0; $e < sizeof($category_data4['child_categories']); $e++){
+                   //   $category_4 = $category_data4['child_categories'][$e]['full_path'][3];
+                   //    $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4;
+                   //      $num++;
+                   //    if($category_data4['child_categories'][$e]['has_child_categories'] == 'Yes'){
+                   //      $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
+                   //      $category_data5 = $this->post($url,$data);
+                   //
+                   //      for($r = 0; $r < sizeof($category_data5['child_categories']); $r++){
+                   //        $category_5 = $category_data5['child_categories'][$r]['full_path'][4];
+                   //        $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
+                   //        $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4.">".$category_5;
+                   //          $num++;
+                   //      }
+                   //    }
+                   // }
+                }
              }
            }
         }
