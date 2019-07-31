@@ -135,9 +135,11 @@ class Momo{
 
   }
 
-
 }
 $Momo = new Momo;
 
-
+$category = $Momo->category();
+echo "<pre>";
+print_r($category);
+echo "</pre>";
 ?>
