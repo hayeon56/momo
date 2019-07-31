@@ -38,6 +38,7 @@ class Momo{
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($curl, CURLOPT_USERPWD, $this->shop_id.":".$this->manager_key);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     $result  = curl_exec($curl);
     curl_errno($curl);
     curl_close($curl);
