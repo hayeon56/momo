@@ -3,7 +3,7 @@
   $category = $Momo->category();
   $image = $Momo->image();
 ?>
-<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript">
 
     function test(){
@@ -117,7 +117,7 @@ function image_delete(){
   $("#main_image").remove();
 }
 
-</script>
+</script> -->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
