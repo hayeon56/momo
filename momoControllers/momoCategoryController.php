@@ -43,11 +43,11 @@ class Momo{
     curl_setopt($curl, CURLOPT_USERPWD, $this->shop_id.":".$this->manager_key);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
-    $result  = curl_exec($curl);
-    print_r($result);
+    $search  = curl_exec($curl);
+    print_r($search);
     curl_errno($curl);
     curl_close($curl);
-    $return_data =  json_decode($result, true);
+    $return_data =  json_decode($search, true);
 
     return $return_data;
   }
