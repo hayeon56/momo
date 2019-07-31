@@ -30,7 +30,7 @@ $temp = $_GET['image'];
               close();
             }
             else{
-            var imagesrc = "<img src='http://eat584.ev.shopserve.jp/pic-labo/"+image+"'width='100px' height='100px'  id='main_image_1' value='"+image+"'>";
+            var imagesrc = "<img src='http://eat584.ev.shopserve.jp/pic-labo/"+image+" width='100px' height='100px'  id='main_image_1' value='"+image+"'>";
             var image_name_hidden = "<input id='main_image' type='hidden' name='image_name' value='"+image+"'>";
             var image_is_mail = "<input type='hidden' name='is_main' value='Yes'>";
             $("#hayeon",opener.document).append(imagesrc);
