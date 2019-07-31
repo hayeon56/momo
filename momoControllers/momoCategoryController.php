@@ -66,7 +66,7 @@ class Momo{
   //カテゴリプリント
   public function category(){
     $url = "https://management.api.shopserve.jp/v2/service-setup/item-categories/_get";
-    $category_data = $this->post($url);
+  //  $category_data = $this->post($url);
    //  $num = 0;
    //  $category_arr = array();
    //
