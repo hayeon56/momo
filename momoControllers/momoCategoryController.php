@@ -135,12 +135,12 @@ class Momo{
                         $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
                         $category_data5 = $this->post($url,$data);
 
-                        // for($r = 0; $r < sizeof($category_data5['child_categories']); $r++){
-                        //   $category_5 = $category_data5['child_categories'][$r]['full_path'][4];
-                        //   $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
-                        //   $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4.">".$category_5;
-                        //     $num++;
-                        // }
+                        for($r = 0; $r < sizeof($category_data5['child_categories']); $r++){
+                          $category_5 = $category_data5['child_categories'][$r]['full_path'][4];
+                          $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
+                          $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4.">".$category_5;
+                            $num++;
+                        }
                       }
                    }
                 }
