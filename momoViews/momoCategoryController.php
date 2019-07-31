@@ -65,10 +65,11 @@ class Momo{
 
   //カテゴリプリント
   public function category(){
-   //  $url = "https://management.api.shopserve.jp/v2/service-setup/item-categories/_get";
-   //  $category_data = $this->post($url);
-   //  $num = 0;
-   //  $category_arr = array();
+    $url = "https://management.api.shopserve.jp/v2/service-setup/item-categories/_get";
+    $category_data = $this->post($url);
+    $num = 0;
+    $category_arr = array();
+    print_r($category_data);
    //
    //  //for始まり
    //   for($i = 0; $i < sizeof($category_data['child_categories']); $i++){
@@ -117,7 +118,6 @@ class Momo{
    //   }
    // //for終わり
    // return $category_arr;
-   echo "aa";
   }
 
   //画像呼び出し
