@@ -121,7 +121,7 @@ class Momo{
      //    }
      // }
    //for終わり
-   return $category_arr;
+   //return $category_arr;
   }
 
   //画像呼び出し
