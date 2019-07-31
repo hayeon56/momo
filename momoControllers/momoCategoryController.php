@@ -142,7 +142,6 @@ class Momo{
         }
      }
    //for終わり
-      print_r($category_arr);
    return $category_arr;
 
   }
