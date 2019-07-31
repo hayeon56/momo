@@ -144,7 +144,7 @@ class Momo{
 }
 $Momo = new Momo;
 
-
+$category = $Momo->category();
 
 
 
