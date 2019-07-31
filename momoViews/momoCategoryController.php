@@ -64,76 +64,76 @@ class Momo{
 
 
   //カテゴリプリント
-  // public function category(){
-  //   $url = "https://management.api.shopserve.jp/v2/service-setup/item-categories/_get";
-  //   $category_data = $this->post($url);
-  //   $num = 0;
-  //   $category_arr = array();
-  //
-  //   //for始まり
-  //    for($i = 0; $i < sizeof($category_data['child_categories']); $i++){
-  //      $category_1 = $category_data['child_categories'][$i]['full_path'][0];//상위 폴더 이름 뽑아오기
-  //       $category_arr[$num] = $category_1;
-  //        $num++;
-  //        if($category_data['child_categories'][$i]['has_child_categories'] == 'Yes'){
-  //          $data = "{\"top_category_path\":[\"".$category_1."\"]}";
-  //          $category_data2 = $this->post($url,$data);
-  //          for($j = 0; $j < sizeof($category_data2['child_categories']); $j++){
-  //           $category_2 = $category_data2['child_categories'][$j]['full_path'][1];
-  //             $category_arr[$num] = $category_1.">".$category_2;
-  //               $num++;
-  //            if($category_data2['child_categories'][$j]['has_child_categories'] == 'Yes'){
-  //              $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\"]}";
-  //              $category_data3 = $this->post($url,$data);
-  //
-  //             for($z = 0; $z < sizeof($category_data3['child_categories']); $z++){
-  //                $category_3 = $category_data3['child_categories'][$z]['full_path'][2];
-  //                 $category_arr[$num] = $category_1.">".$category_2.">".$category_3;
-  //                  $num++;
-  //                 if($category_data3['child_categories'][$j]['has_child_categories'] == 'Yes')
-  //                 $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\"]}";
-  //                 $category_data4 = $this->post($url,$data);
-  //
-  //                  for($e = 0; $e < sizeof($category_data4['child_categories']); $e++){
-  //                    $category_4 = $category_data4['child_categories'][$e]['full_path'][3];
-  //                     $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4;
-  //                       $num++;
-  //                     if($category_data4['child_categories'][$e]['has_child_categories'] == 'Yes'){
-  //                       $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
-  //                       $category_data5 = $this->post($url,$data);
-  //
-  //                       for($r = 0; $r < sizeof($category_data5['child_categories']); $r++){
-  //                         $category_5 = $category_data5['child_categories'][$r]['full_path'][4];
-  //                         $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
-  //                         $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4.">".$category_5;
-  //                           $num++;
-  //                       }
-  //                     }
-  //                  }
-  //               }
-  //            }
-  //          }
-  //       }
-  //    }
-  //  //for終わり
-  //  return $category_arr;
-  // }
+  public function category(){
+    // $url = "https://management.api.shopserve.jp/v2/service-setup/item-categories/_get";
+    // $category_data = $this->post($url);
+    // $num = 0;
+    // $category_arr = array();
+    //
+    // //for始まり
+    //  for($i = 0; $i < sizeof($category_data['child_categories']); $i++){
+    //    $category_1 = $category_data['child_categories'][$i]['full_path'][0];//상위 폴더 이름 뽑아오기
+    //     $category_arr[$num] = $category_1;
+    //      $num++;
+    //      if($category_data['child_categories'][$i]['has_child_categories'] == 'Yes'){
+    //        $data = "{\"top_category_path\":[\"".$category_1."\"]}";
+    //        $category_data2 = $this->post($url,$data);
+    //        for($j = 0; $j < sizeof($category_data2['child_categories']); $j++){
+    //         $category_2 = $category_data2['child_categories'][$j]['full_path'][1];
+    //           $category_arr[$num] = $category_1.">".$category_2;
+    //             $num++;
+    //          if($category_data2['child_categories'][$j]['has_child_categories'] == 'Yes'){
+    //            $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\"]}";
+    //            $category_data3 = $this->post($url,$data);
+    //
+    //           for($z = 0; $z < sizeof($category_data3['child_categories']); $z++){
+    //              $category_3 = $category_data3['child_categories'][$z]['full_path'][2];
+    //               $category_arr[$num] = $category_1.">".$category_2.">".$category_3;
+    //                $num++;
+    //               if($category_data3['child_categories'][$j]['has_child_categories'] == 'Yes')
+    //               $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\"]}";
+    //               $category_data4 = $this->post($url,$data);
+    //
+    //                for($e = 0; $e < sizeof($category_data4['child_categories']); $e++){
+    //                  $category_4 = $category_data4['child_categories'][$e]['full_path'][3];
+    //                   $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4;
+    //                     $num++;
+    //                   if($category_data4['child_categories'][$e]['has_child_categories'] == 'Yes'){
+    //                     $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
+    //                     $category_data5 = $this->post($url,$data);
+    //
+    //                     for($r = 0; $r < sizeof($category_data5['child_categories']); $r++){
+    //                       $category_5 = $category_data5['child_categories'][$r]['full_path'][4];
+    //                       $data = "{\"top_category_path\":[\"".$category_1."\",\"".$category_2."\",\"".$category_3."\",\"".$category_4."\"]}";
+    //                       $category_arr[$num] = $category_1.">".$category_2.">".$category_3.">".$category_4.">".$category_5;
+    //                         $num++;
+    //                     }
+    //                   }
+    //                }
+    //             }
+    //          }
+    //        }
+    //     }
+    //  }
+   //for終わり
+  // return $category_arr;
+  }
 
   //画像呼び出し
-  // public function image(){
-  //
-  //   $url = "https://management.api.shopserve.jp/v2/images";
-  //   $image_data = $this->get($url);
-  //   for($i = 0; $i < sizeof($image_data['images']); $i++){
-  //     $image_arr[$i]['image_name'] = $image_data['images'][$i]['image_name'];
-  //     $image_arr[$i]['alt'] = $image_data['images'][$i]['alt'];
-  //     $image_arr[$i]['image_category_name'] = $image_data['images'][$i]['image_category_name'];
-  //     $image_arr[$i]['registered_at'] = $image_data['images'][$i]['registered_at'];
-  //   }
-  //
-  //   return $image_arr;
-  //
-  // }
+  public function image(){
+
+    $url = "https://management.api.shopserve.jp/v2/images";
+    $image_data = $this->get($url);
+    for($i = 0; $i < sizeof($image_data['images']); $i++){
+      $image_arr[$i]['image_name'] = $image_data['images'][$i]['image_name'];
+      $image_arr[$i]['alt'] = $image_data['images'][$i]['alt'];
+      $image_arr[$i]['image_category_name'] = $image_data['images'][$i]['image_category_name'];
+      $image_arr[$i]['registered_at'] = $image_data['images'][$i]['registered_at'];
+    }
+
+    return $image_arr;
+
+  }
 
 }
 $Momo = new Momo;
