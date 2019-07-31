@@ -28,9 +28,9 @@ class Momo{
   //POST
   public function post($url,$data){
 
-        if(gettype($data) == 'array'){
-            $data = json_encode($data); // array -> json
-        }
+    if(gettype($data) == 'array'){
+        $data = json_encode($data); // array -> json
+    }
 
         //$data = json_encode($data); // array -> json
     $curl = curl_init(); // RESET
@@ -38,7 +38,7 @@ class Momo{
     curl_setopt($curl, CURLOPT_POST, 1);
     curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: json'));
-    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);     // 원격서버의 인증서가 유효한지 검사 안함
+    //curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);     // 원격서버의 인증서가 유효한지 검사 안함
     curl_setopt($curl, CURLOPT_USERPWD, $this->shop_id.":".$this->manager_key);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     $result  = curl_exec($curl);
