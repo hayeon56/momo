@@ -38,6 +38,7 @@ class Momo{
     curl_setopt($curl, CURLOPT_USERPWD, $this->shop_id.":".$this->manager_key);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     $result  = curl_exec($curl);
+    echo $result;
     curl_errno($curl);
     curl_close($curl);
     $return_data =  json_decode($result, true);//배열로 바꾸기
