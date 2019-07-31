@@ -41,7 +41,6 @@ class Momo{
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     $search  = curl_exec($curl);
-    print_r($search);
     curl_errno($curl);
     curl_close($curl);
     $return_data =  json_decode($search, true);
@@ -64,7 +63,7 @@ class Momo{
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     $search  = curl_exec($curl);
-    print_r($search);
+
     curl_errno($curl);
     curl_close($curl);
     $return_data =  json_decode($search, true);
