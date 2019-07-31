@@ -165,7 +165,7 @@ function image_delete(){
     <strong>メモ</strong><br><br><textarea rows="4" cols="40" name="memo" placeholder="メモ" ></textarea>
     <hr>
     <strong>カテゴリ</strong><br><br>
-    <select multiple="multiple" name="item_category">
+    <select multiple="multiple" name="item_category" style="width:800px">
       <?php for($i = 0; $i < sizeof($category); $i++){ ?>
         <option value="<?=$category[$i]?>"><?php echo $category[$i] ?></option>
       <?php } ?>
