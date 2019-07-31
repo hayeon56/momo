@@ -1,5 +1,5 @@
 <?php
-  include_once "momoCategoryController.php";
+  include("../momoControllers/momoCategoryController.php");
   $category = $Momo->category();
 ?>
 <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
@@ -42,6 +42,7 @@
         momoform.bundle_packing.focus();
         return false;
       }
+      return true;
     }
 
 
@@ -139,7 +140,7 @@ function image_delete(){
     <h1>商品登録</h1>
     <div class="my-box">
     <h2>基本情報</h2>
-    <form name="momoform" action="../momoControllers/momoController.php/itemRegistration" onsubmit="test()" method="post" id="sou">
+    <form name="momoform" action="../momoControllers/momoController.php/itemRegistration" onsubmit="return test()" method="post" id="sou">
     <strong>商品番号</strong><br><br><input type="text" name="item_code" placeholder="商品番号" >
     <p>※半角英数字「-（ハイフン）」、「_（アンダーバー）」64文字以内</p>
     <hr>
