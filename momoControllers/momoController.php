@@ -119,8 +119,6 @@ class Momo{
      );
      $url = "https://management.api.shopserve.jp/v2/items/$item_code/categories";
      $this->put($url,$array);
-     echo "<script>alert('商品登録完了');";
-     echo "document.location.href=\"/momoViews/itemRegistration.php\";</script>";
 
     //商品配送情報更新
     $bundle_packing = $_POST['bundle_packing'];
@@ -220,6 +218,10 @@ class Momo{
     );
     $url = "https://management.api.shopserve.jp/v2/items/$item_code/description/pc";
     $this->put($url,$description_array);
+
+    echo "<script>alert('商品登録完了');";
+    echo "document.location.href=\"/momoViews/itemRegistration.php\";</script>";
+
 
   }
 

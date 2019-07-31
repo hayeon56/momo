@@ -2,7 +2,7 @@
   include_once "momoCategoryController.php";
   $category = $Momo->category();
 ?>
- <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript">
 
     function test(){
@@ -43,6 +43,8 @@
         return false;
       }
     }
+
+
       $(document).ready(function(){
 
        $("input[name='delivery_type']:checkbox").change(function(){
