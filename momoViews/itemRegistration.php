@@ -1,6 +1,6 @@
 <?php
-  include("/momo/momoControllers/momoCategoryController.php");
-
+  include_once "momoCategoryController.php";
+  $category = $Momo->category();
 ?>
  <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript">
