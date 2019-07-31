@@ -57,9 +57,7 @@ class Momo{
 
     $curl = curl_init();
     $search = "";
-    $data = array(
-      "top_category_path"=>["キーホルダー"]
-    );
+    
     $data = json_encode($data);
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_POST, 1);
@@ -99,7 +97,7 @@ class Momo{
   //カテゴリプリント
   public function category(){
     $url = "https://management.api.shopserve.jp/v2/service-setup/item-categories/_get";
-    $category_data = $this->post($url,$data);
+    $category_data = $this->post1($url);
     $num = 0;
     $category_arr = array();
 
