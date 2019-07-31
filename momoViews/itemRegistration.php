@@ -1,5 +1,5 @@
 <?php
-
+  include("../momoControllers/momoCategoryController.php");
 
 ?>
  <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
