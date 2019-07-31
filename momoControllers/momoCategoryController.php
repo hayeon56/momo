@@ -44,6 +44,7 @@ class Momo{
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     $result  = curl_exec($curl);
+    print_r($result);
     curl_errno($curl);
     curl_close($curl);
     $return_data =  json_decode($result, true);
