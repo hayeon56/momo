@@ -1,9 +1,9 @@
 <?php
-  include("../momoControllers/momoCategoryController.php");
-
+  include("../momo/momoControllers/momoCategoryController.php");
+  $category = $Momo->category();
   $image = $Momo->image();
 ?>
-<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+ <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript">
 
     function test(){
