@@ -27,7 +27,7 @@ class Momo{
   }
 
   //POST
-  public function post($url,$data){
+  public function post($url){
 
     $curl = curl_init();
     $search = "";
