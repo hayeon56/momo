@@ -1,5 +1,5 @@
 <?php
-  include("../momo/momoControllers/momoCategoryController.php");
+  include("../momoControllers/momoCategoryController.php");
   $category = $Momo->category();
   $image = $Momo->image();
 ?>
