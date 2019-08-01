@@ -73,7 +73,20 @@ class Momo{
     $item_code = $_POST['item_code'];
     $url = "https://management.api.shopserve.jp/v2/items/$item_code/basic";
     $aa = $this->get($url);
-    print_r($aa);
+    echo "<table border='1'>";
+    echo "<th>商品番号</th>";
+    echo "<th>価格</th>";
+    echo "<th>単位</th>";
+    echo "<th>メモ</th>";
+    echo "<th>商品名</th>";
+    echo "<tr>";
+    echo "<td>".$aa['item_code']."</td>";
+    echo "<td>".$aa['basic']['item_price']."</td>";
+    echo "<td>".$aa['basic']['item_unit']."</td>";
+    echo "<td>".$aa['basic']['memo']."</td>";
+    echo "<td>".$aa['basic']['item_name']."</td>";
+    echo "</tr>";
+    echo "</table>";
 
   }
 
