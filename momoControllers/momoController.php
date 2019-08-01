@@ -104,7 +104,7 @@ class Momo{
      $this->put($url,$item_ect_data);
 
      echo "<script>alert('商品登録完了');";
-     echo "document.location.href=\"/momoViews/itemRegistration.php\";</script>";
+     echo "document.location.href=\"momo/momoViews/itemRegistration.php\";</script>";
 
 
      //商品登録(カテゴリ)
