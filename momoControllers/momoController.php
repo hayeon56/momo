@@ -227,6 +227,7 @@ class Momo{
 
 
 }
+$Momo = new Momo;
 
 $Momo->itemRegistration();
 
