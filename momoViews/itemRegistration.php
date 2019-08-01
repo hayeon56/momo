@@ -63,8 +63,8 @@
              $('#temperature_controlled2').prop('disabled', false);
              $('#enable_specific_shipping_charge').prop('disabled', false);
              $('#specific_shipping_charge').prop('disabled', false);
-             $('#prior').prop('disabled', false);
-             $('#display_type').prop('disabled', false);
+             $('#prior').prop('disabled', true);
+             $('#display_type').prop('disabled', true);
           }
      });
       $("input[name='enable_specific_shipping_charge']:checkbox").change(function(){
