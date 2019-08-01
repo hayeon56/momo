@@ -103,6 +103,10 @@ class Momo{
      $url = "https://management.api.shopserve.jp/v2/items/$item_code/basic";
      $this->put($url,$item_ect_data);
 
+     echo "<script>alert('商品登録完了');";
+     echo "document.location.href=\"/momoViews/itemRegistration.php\";</script>";
+
+
      //商品登録(カテゴリ)
      $item_category = $_POST['item_category'];
 
@@ -218,9 +222,6 @@ class Momo{
     );
     $url = "https://management.api.shopserve.jp/v2/items/$item_code/description/pc";
     $this->put($url,$description_array);
-
-    echo "<script>alert('商品登録完了');";
-    echo "document.location.href=\"../momo/momoViews/itemRegistration.php\";</script>";
 
 
   }
