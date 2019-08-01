@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <form action="/momoControllers/momoSearchController.php/itemInformation" method="post">
+    <form action="../momoControllers/momoSearchController.php/itemInformation" method="post">
       <input type="text" name="item_code" placeholder="商品番号入力">
       <button type="submit">Search</button>
     </form>

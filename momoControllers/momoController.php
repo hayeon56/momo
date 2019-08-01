@@ -220,7 +220,7 @@ class Momo{
     $this->put($url,$description_array);
 
     echo "<script>alert('商品登録完了');";
-    echo "document.location.href=\"/momoViews/itemRegistration.php\";</script>";
+    echo "document.location.href=\"../momoViews/itemRegistration.php\";</script>";
 
 
   }
@@ -228,8 +228,6 @@ class Momo{
 
 }
 
-$Momo = new Momo;
-$Momo->itemInformation();
 $Momo->itemRegistration();
 
 
