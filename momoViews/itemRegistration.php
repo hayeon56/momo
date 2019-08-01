@@ -211,7 +211,7 @@ function image_delete(){
       <div id="hayeon">
       </div>
       <br>
-      <hr>
+      <!-- <hr>
       <br>
       <strong>サブ画像(9つまで)</strong>
       <table border="1" id="test" width=100px>
@@ -229,7 +229,7 @@ function image_delete(){
           <td id="cell_9">dd</td>
           <td id="cell_10">dd</td>
         </tr>
-      </table>
+      </table> -->
       <br><br><hr>
       <strong>商品紹介文</strong>
       <p>メイン紹介文</p>

@@ -49,6 +49,7 @@ $temp = $_GET['image'];
           haha+="<img src='http://eat584.ev.shopserve.jp/pic-labo/"+image+"'>";
           $("#main_description",opener.document).val(haha);
           alert("挿入完了。");
+          close();
         }
 
         else if(temp == 'sub_description1'){
@@ -57,6 +58,7 @@ $temp = $_GET['image'];
           haha+="<img src='http://eat584.ev.shopserve.jp/pic-labo/"+image+"'>";
           $("#sub_description1",opener.document).val(haha);
           alert("挿入完了。");
+          close();
         }
 
         else if(temp == 'sub_description2'){
@@ -65,6 +67,7 @@ $temp = $_GET['image'];
           haha+="<img src='http://eat584.ev.shopserve.jp/pic-labo/"+image+"'>";
           $("#sub_description2",opener.document).val(haha);
           alert("挿入完了。");
+          close();
         }
       }
 
